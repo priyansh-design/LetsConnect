@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setProfile">
+    <TextView
+        android:id="@+id/profilepageHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set your profile"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="120dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/saveprofilecardview"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/profilepageHeading">
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_launcher_background"/>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:hint="Enter your name"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/saveprofilecardview"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/saveProfile"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/userName"
+        android:layout_marginTop="30dp"
+        android:text="Save profile"
+        android:textStyle="bold"
+        android:textSize="19sp"
+
+        android:background="@drawable/corners"
+        android:textColor="#fff"/>
+
+    <ProgressBar
+        android:id="@+id/progessBarinSaveProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/saveProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible"/>
+
+
+
+
+
+
+</RelativeLayout>

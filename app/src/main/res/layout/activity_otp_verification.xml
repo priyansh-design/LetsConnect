@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".otpVerification">
+
+  <ImageView
+      android:id="@+id/otpvImage"
+      android:layout_width="120dp"
+      android:layout_height="120dp"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="120dp"
+      android:src="@drawable/ic_launcher_background"
+      android:contentDescription="TODO" />
+  <TextView
+      android:id="@+id/otpVerificationheading"
+      android:layout_width="wrap_content"
+      android:layout_height="40dp"
+      android:layout_below="@id/otpvImage"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="15dp"
+      android:text="OTP Verification"
+    android:textAlignment="center"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+      android:gravity="center_horizontal" />
+
+
+  <TextView
+      android:id="@+id/otpText"
+      android:layout_width="wrap_content"
+      android:layout_height="20dp"
+      android:text="Enter the OTP you received"
+      android:textStyle="bold"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@+id/otpVerificationheading"
+      android:layout_marginTop="20dp"
+      android:textSize="17sp"
+      android:fontFamily="sans-serif"/>
+
+  <LinearLayout
+      android:id="@+id/linearLayoutinner"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:layout_below="@id/otpText"
+      android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/inputtext1"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:importantForAutofill="no"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/otpText"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        tools:ignore="LabelFor"/>
+
+    <EditText
+        android:id="@+id/inputtext2"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:importantForAutofill="no"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/otpText"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:id="@+id/inputtext3"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:importantForAutofill="no"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/otpText"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"/>
+    <EditText
+        android:id="@+id/inputtext4"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:importantForAutofill="no"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/otpText"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"/>
+    <EditText
+        android:id="@+id/inputtext5"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:importantForAutofill="no"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/otpText"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"/>
+    <EditText
+        android:id="@+id/inputtext6"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:importantForAutofill="no"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/otpText"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"/>
+
+  </LinearLayout>
+  <TextView
+      android:id="@+id/didnotReceiveotp"
+      android:layout_width="wrap_content"
+      android:layout_height="20dp"
+      android:layout_below="@id/linearLayoutinner"
+      android:text="Didn't Receive OTP?"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="10dp"
+      android:textSize="14sp"/>
+  <TextView
+    android:id="@+id/changeNumber"
+      android:layout_width="wrap_content"
+      android:layout_height="23dp"
+    android:layout_below="@id/didnotReceiveotp"
+    android:layout_centerHorizontal="true"
+    android:text="Change Number"
+    android:textColor="#1a73e8"
+    android:layout_marginTop="10dp"/>
+  <Button
+      android:id="@+id/verifyButton"
+      android:layout_width="270dp"
+      android:layout_height="50dp"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@id/changeNumber"
+      android:layout_marginTop="30dp"
+      android:text="Verify"
+      android:textStyle="bold"
+      android:textSize="19sp"
+
+      android:background="@drawable/corners"
+      android:textColor="#fff"/>
+
+  <ProgressBar
+      android:id="@+id/progessBarinotp"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_below="@id/verifyButton"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="30dp"
+      android:visibility="invisible"/>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

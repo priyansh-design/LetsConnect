@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1022912298433",
+    "project_id": "letsconnect-81c75",
+    "storage_bucket": "letsconnect-81c75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022912298433:android:2e02092a175b075e490340",
+        "android_client_info": {
+          "package_name": "com.example.letsconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022912298433-3lmkh7nbmqtols2n3j5gd431ulfjvncj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.letsconnect",
+            "certificate_hash": "6ce4f056d3a664bab2b862a2064b04638c1a5f8b"
+          }
+        },
+        {
+          "client_id": "1022912298433-4q3t9c4mc4668hh6tntoimobkff740r6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfPYZJeENEll-4n1mDfVsX0YsDfloRGKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1022912298433-4q3t9c4mc4668hh6tntoimobkff740r6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
